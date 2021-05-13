@@ -1,0 +1,118 @@
+
+.card__headlines__nav{
+    padding-top: 71px;
+    padding-left: 62px;
+    padding-right: 62px;
+    @include breakpoint(1024px){
+        padding-right: 20px
+    }
+    @include breakpoint(960px){
+        text-align: center;
+        padding: 0px;
+        margin-top: 30px;
+    }
+    .heading{
+        font-family: $inter;
+        font-size: 2.25rem;
+        color: $White;
+        padding-left: 10px;
+        padding-bottom: 25.5px;
+        max-width: 25rem;
+        .h__voilet{
+            color: $Softviolet;
+        }
+        @include breakpoint(1060px){
+            font-size: 2.1rem;
+        }
+        @include breakpoint(1024px){
+            font-size: 1.9rem;
+        }
+        @include breakpoint(960px){
+            padding-top: 43px;
+            max-width: 20rem;
+            margin: auto;
+            padding-bottom: 0px;
+        }
+    }
+    .sub__heading{
+        font-family: $inter;
+        font-size: 0.94rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        line-height: 1.7;
+        color: $Slightlytransparenwhite;
+        padding-left: 10px;
+        max-width: 24rem;
+        @include breakpoint(960px){
+            max-width: 25rem;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 46px;
+        }
+        @include breakpoint(960px){
+            max-width: 17rem;
+        }
+    }
+}
+
+.nav{
+    ul{
+        margin-top: 72px;
+        @include flex(row,center,none);
+        @include breakpoint(960px){
+            @include flex(column,center,none);
+            margin-top: 0px;
+        }
+    }
+    li{
+        margin-right: 64.5px;
+        @include breakpoint(1060px){
+            margin-right: 40px;
+        }
+        @include breakpoint(1024px){
+            margin-right: 20px;
+        }
+        @include breakpoint(960px){
+            margin-bottom: 25px;
+        }
+        h2{
+            color: $White;
+            font-family: $inter;
+            font-family: 700;
+            font-size: 1.5rem;
+            padding-bottom: 6.5px;
+            @include breakpoint(960px){
+                font-size: 1.2rem;
+            }
+        }
+        p{
+            font-size: 0.8rem;
+            letter-spacing: 0.3px;
+            font-family: $lexend-deca;
+            text-transform: uppercase;
+            color: $Slightlytransparenwhite;
+            @include breakpoint(960px){
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .ml{
+        margin-left: 10px;
+    }
+    .mr{
+        margin-right: 85px;
+        @include breakpoint(1100px){
+            margin-right: 50px;
+        }
+        @include breakpoint(1060px){
+            margin-right: 10px;
+        }
+        @include breakpoint(1024px){
+            margin-right: 0px;
+        }
+        @include breakpoint(960px){
+            margin-right: 10px;
+        }
+    }
+}
+
